@@ -1,0 +1,149 @@
+module_enable_status:                 # do NOT modify modules order
+  dpc: False
+  blc: True
+  aaf: True
+  awb: False
+  cnf: True
+  cfa: True
+  scl: False
+  ccm: True
+  gac: True
+  tvc: False
+  wnf: False
+  csc: True
+  nlm: False
+  bnf: False
+  ceh: True
+  he:  False
+  eeh: True
+  fcs: True
+  hsc: True
+  bcc: True
+
+#  dpc: False
+#  blc: True
+#  aaf: False
+#  #awb: False
+#  cnf: False
+#  cfa: True
+#  scl: False
+#  ccm: False
+#  gac: False
+#  tvc: False
+#  wnf: False
+#  csc: False
+#  nlm: False
+#  bnf: False
+#  ceh: False
+#  he:  False
+#  eeh: False
+#  fcs: False
+#  hsc: False
+#  bcc: False
+  
+hardware:
+  raw_width: 4096
+  raw_height: 2160
+  raw_bit_depth: 8
+  bayer_pattern: rggb
+
+
+# -------------------- Module Algorithms Parameters --------------------
+
+dpc:
+  diff_threshold: 30
+
+blc:
+  bl_r: 0                             # a subtractive value, not additive!
+  bl_gr: 0
+  bl_gb: 0
+  bl_b: 0
+  alpha: 0                            # x1024
+  beta: 0                             # x1024
+
+aaf: ~
+
+awb:
+  r_gain: &r_gain 1860                # x1024
+  gr_gain: 1024                       # x1024
+  gb_gain: 1024                       # x1024
+  b_gain: &b_gain 1280                # x1024
+
+cnf:
+  diff_threshold: 0
+  r_gain: *r_gain                     # x1024
+  b_gain: *b_gain                     # x1024
+
+cfa:
+  mode: bilinear
+
+scl:
+  newWidth: 4096 #1138
+  newHeight: 2160 #640
+
+# ccm:
+  # ccm:
+    # - [ 1024, 0, 0, 0 ]
+    # - [ 0, 1024, 0, 0 ]
+    # - [ 0, 0, 1024, 0 ]
+
+ccm:
+    ccm:
+     - [ 1382, -113, -246, 0 ]
+     - [ -484, 1808, -300, 0 ]
+     - [ 102, -860, 1802, 0 ]
+ 
+gac:
+  gain: 256                           # x256
+  gamma: 0.45
+
+tvc:
+  weight: 0.1
+  multichannel: True
+  eps: 0.0002
+  iterations: 200
+
+wnf:
+  rescale: True
+  multichannel: True
+  ycbcr: True
+  wavelet_levels: 0
+  sigma: 0
+  
+csc: ~
+
+nlm:
+  search_window_size: 9
+  patch_size: 3
+  h: 10                               # larger value has stronger smoothing effect
+
+bnf:
+  intensity_sigma: 0.8                # larger value has stronger smoothing effect
+  spatial_sigma: 0.8                  # larger value has stronger smoothing effect
+  kernel_size: 5
+
+ceh:
+  tiles: [4, 6]
+  clip_limit: 0.01
+
+he:
+  num_bins: 256
+  
+eeh:
+  edge_gain: 384                      # x256
+  flat_threshold: 4                   # delta <= flat_threshold: set delta to 0
+  edge_threshold: 8                   # delta > edge_threshold: increase delta by edge_gain
+  delta_threshold: 64
+
+fcs:
+  delta_min: 8
+  delta_max: 32
+
+hsc:
+  hue_offset: 0                      # in degree
+  saturation_gain: 256                # x256
+
+bcc:
+  brightness_offset: 0
+  contrast_gain: 256                  # x256
+
