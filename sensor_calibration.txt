@@ -1,0 +1,112 @@
+Name: FLIR 8.9MP
+Intrinsics
+Type: OpenCV Fisheye Model
+Width: 4096
+Height: 2160
+Focal_x: 1830.62495
+Focal_y: 1827.40693
+COD_x: 2061.98136
+COD_y: 1140.44557
+Dist_1: 0.22613101
+Dist_2: 0.04494479
+Dist_3: 0.19866239
+Dist_4: -0.00740964
+Extrinsics
+X: 0
+Y: 0
+Z: 0
+R_00: 1
+R_01: 0
+R_02: 0
+R_10: 0
+R_11: 1
+R_12: 0
+R_20: 0
+R_21: 0
+R_22: 1
+
+
+Name: FLIR 3.2MP
+Type: OpenCV Fisheye Model
+Width: 2048
+Height: 1536
+Focal_x: 1404.71094
+Focal_y: 1404.82102
+COD_x: 1036.28659
+COD_y: 803.96812
+Dist_1: -0.06272791
+Dist_2: -0.06277119
+Dist_3: 0.18076757
+Dist_4: -0.15256015
+Extrinsics
+X:
+Y:
+Z:
+R_00: 1
+R_01: 0
+R_02: 0
+R_10: 0
+R_11: 1
+R_12: 0
+R_20: 0
+R_21: 0
+R_22: 1
+
+
+Name: CCTV
+Type: OpenCV Fisheye Model
+Width: 3840
+Height: 2160
+Focal_x: 2166.81285
+Focal_y: 2182.68103
+COD_x: 1990.94045
+COD_y: 1175.24911
+Dist_1: -0.05680663
+Dist_2: -0.27360842
+Dist_3: 1.18621566
+Dist_4: -1.42289721
+Extrinsics
+X:
+Y:
+Z:
+R_00: 1
+R_01: 0
+R_02: 0
+R_10: 0
+R_11: 1
+R_12: 0
+R_20: 0
+R_21: 0
+R_22: 1
+
+
+Name: Velodyne
+Extrinsics
+X: 0
+Y: 0
+Z: 0
+R_00: 1
+R_01: 0
+R_02: 0
+R_10: 0
+R_11: 1
+R_12: 0
+R_20: 0
+R_21: 0
+R_22: 1
+
+
+Name: Cepton
+Extrinsics
+X: 0
+Y: 0
+Z: 0
+R_00: 1
+R_01: 0
+R_02: 0
+R_10: 0
+R_11: 1
+R_12: 0
+R_20: 0
+R_21: 0
+R_22: 1

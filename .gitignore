@@ -81,14 +81,6 @@ Desktop.ini
 *.sqlite3
 *.db
 
-# Ignore configs if user wants
-# configs/*.yaml
-
-# Ignore calibration and result files
-calibration_file.txt
-extrinsics_result.json
-GMIND_Calibration.json
-
 # Ignore compressed or raw data
 *.zip
 *.tar.gz

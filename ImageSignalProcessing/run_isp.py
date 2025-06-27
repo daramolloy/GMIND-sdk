@@ -257,7 +257,7 @@ if __name__ == '__main__':
 
     # 2. Batch process multiple sets of images using a dict:
     image_dict = {
-        'FLIR8.9': ['./FLIR-8.9/PNG'],
+        'FLIR8.9': ['H:/DanganDataset-Formatted2/Day/DistanceTest/1/FLIR-8.9/PNG'],
     }
     out_dir = 'Parent'
 
