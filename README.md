@@ -27,7 +27,7 @@ GMIND-sdk is a toolkit for working with the GMIND ITS infrastructure node datase
 
 1. Clone the repository and install dependencies:
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/daramolloy/GMIND-sdk
    cd GMIND-sdk
    pip install -r requirements.txt
    ```
@@ -49,7 +49,7 @@ Contributions are welcome! Please open issues or pull requests for bug fixes, ne
 
 ## License
 
-[Specify your license here]
+This project is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 ---
 
